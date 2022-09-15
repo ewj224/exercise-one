@@ -18,7 +18,7 @@
         </nav>
     </header>
     <main>
-        <section id="box-model" class="box-model-section section-element"></section>
+        <section id="box-model-section" class="box-model-section section-element">
             <div class="box-model-interior interior">
                 <h1>CSS Box Model</h1>
                 <h2>/* Padding is inside of the element in CSS */</h2>
@@ -28,9 +28,36 @@
                 <h2>/* Border is added to width and height of element in CSS */</h2>
                 <p>border: 10px solid green</p>
             </div>
-        <section id="flex-box" class="flex-box-section section"></section>
-        <section id="positioning" class="positioning-section section-element"></section>
-            <div class = "interior"></div>
+        </section>
+        <section id="flex-box-section" class="flex-box-section section">
+            <div class="interior interior-flex">
+                <div class="interior-flex-top">
+                    <div>
+                        <h1>Display: Flex</h1>
+                    </div>
+                </div>
+                <div class="interior-flex-horizontal">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="interior-flex-vertical">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </section>
+        <section id="positioning-section" class="positioning-section section-element">
+            <div class = "interior">
+                <div class="circle circle-one"></div>
+                <div class="circle" style="right: 48px; top: 34px"></div>
+                <div class="circle circle-three"></div>
+                <div class="square square-one"></div>
+                <div class="square" style="right: 510px; bottom: 204px"></div>
+                <h1>Positioning Elements</h1>
+            </div>
+        </section>
         <section id="heading-section" class="heading-section section-element">
             <div class="heading-section-interior inner">
                 <h1>Proper Heading Usage (h1)</h1>
