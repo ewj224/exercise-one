@@ -10,11 +10,11 @@
 <body>
     <header>
         <nav>
-            <a href="">Box Model</a>
-            <a href="">Flexbox</a>
-            <a href="">Positioning Elements</a>
-            <a href="">Heading Usage</a>
-            <a href="">Simple Javascript</a>
+            <a href="#box-model-section">Box Model</a>
+            <a href="#flex-box-section">Flexbox</a>
+            <a href="#positioning-section">Positioning Elements</a>
+            <a href="#heading-section">Heading Usage</a>
+            <a href="#simple-javascript-section">Simple Javascript</a>
         </nav>
     </header>
     <main>
@@ -23,8 +23,8 @@
                 <h1>CSS Box Model</h1>
                 <h2>/* Padding is inside of the element in CSS */</h2>
                 <p>padding: 40px; (inside)</p>
-                <h2>/* Padding is outside of the element in CSS */</h2>
-                <p>padding: 40px; (outside)</p>
+                <h2>/* Margin is outside of the element in CSS */</h2>
+                <p>margin: 40px; (outside)</p>
                 <h2>/* Border is added to width and height of element in CSS */</h2>
                 <p>border: 10px solid green</p>
             </div>
@@ -59,7 +59,7 @@
             </div>
         </section>
         <section id="heading-section" class="heading-section section-element">
-            <div class="heading-section-interior inner">
+            <div class="interior">
                 <h1>Proper Heading Usage (h1)</h1>
                 <h2>A heading describes the content below it (h2)</h2>
                 <h3>Style of the text is not relevant (h3)</h3>
@@ -68,10 +68,31 @@
                 <p>And you could put another paragraph (or two, or three...) under this further describing this concept. (p)</p>
             </div>
         </section>
-        <section id="simple-javascript" class="simple-javascript-section section-element"></section>
+        <section id="simple-javascript-section" class="simple-javascript-section section-element">
+            <script>
+                let counter = 0;
+
+                function increaseCounterValue(){
+                    counter = counter + 1;
+                    const counterDiv = document.querySelector('#counter');
+                    counterDiv.innerHTML = counter;
+                }
+            </script>
+            <div class="interior">
+                <h1>Simple Javascript</h1>
+                <div class="counter-button-wrapper">
+                    <p id="counter">0</p>
+                    <div id="button">
+                        <button onclick="increaseCounterValue()">Click to Increase</button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
-        <p>Student Name - Semester , Year</p>
+        <div class="interior">
+            <p>Student Name - Semester, Year</p>
+        </div>
     </footer>
 </body>
 </html>

@@ -9,12 +9,38 @@ h2,
 h3,
 h4 {
     font-family: sans-serif;
-    box-sizing: border-box;
+    margin:0;
 }
 
 header {
     background-color: #85c4ff;
     padding: 40px;
+}
+
+header nav{
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+
+}
+
+header nav a{
+    color: black;
+    font-weight: bold;
+    margin: 0 15px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+header nav a:last-of-type{
+    margin-right: 0;
+}
+
+header nav a:first-of-type{
+    margin-left: 0;
 }
 
 section.section-element {
@@ -37,37 +63,36 @@ section.box-model-section {
 .box-model-interior {
     background-color: #9ef490;
     border-color: #187908;
+    min-height: 600px;
 }
 
 .interior h1 { 
-    color: #000;
     font-size: 64px;
     font-weight: 700;
-    line-height: 74px;
+    line-height: 1.5;
+    margin-bottom: 45px;
 }
 
 .interior h2 {
-    color: #000;
     font-size: 32px;
     font-weight: 400; 
     line-height: 1;
+    margin-top: -28px;
 }
 
 .interior p {
-    color: #000;
     font-size: 32px;
     font-weight: 700; 
     line-height: 1;
+    margin-top: 0;
 }
-
-footer {
-    background-color: #FFC3C3;
-    padding: 20px;
-}
-
 
 .flex-box-section{
     background-color: #F1D3CA;
+}
+
+.flex-box-section .interior{
+    padding:40px 0; 
 }
 
 .interior-flex{
@@ -188,38 +213,85 @@ footer {
     background-color:#F1CAF0;
 }
 
-.inner h1 {
+.heading-section .interior{
+    border: none;
+    padding: 0;
+}
+
+.heading-section .interior h1 {
     color:#6C0468;
     font-size: 64px;
     font-weight: 700;
-    line-height: 74px;
+    line-height: 73.59px;
     
 }
 
-.inner h2 {
+.heading-section .interior h2 {
     color:#6C0468;
     font-size: 40px;
     font-weight: 700;
-    line-height: 46px;
+    line-height: 92px;
 }
 
-.inner h3 {
+.heading-section .interior h3 {
     color:#6C0468;
     font-size: 64px;
     font-weight: 700;
-    line-height: 74px;
+    line-height: 92px;
 }
 
-.inner h4 {
+.heading-section .interior h4 {
     color:#6C0468;
     font-size: 36px;
     font-weight: 700;
-    line-height: 41.4px;
+    line-height: 92px;
 }
 
-.inner p {
-    color:#000;
+.heading-section .interior p {
+    color:#6C0468;
     font-size: 20px;
     font-weight: 700;
-    line-height: 23px;
+    line-height: 24px;
 }
+
+.simple-javascript-section{
+    background-color: #FAEFD3;
+}
+
+.simple-javascript-section .interior{
+    border-color: #644904;
+    color: #644904;
+}
+
+.simple-javascript-section h1{
+    color: #644904;
+}
+
+.counter-button-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.counter-button-wrapper p{
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 74px;
+    margin: 0 40px 0 0;
+}
+
+
+
+footer {
+    background-color: #FFC3C3;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 40px;
+
+}
+
+footer .interior{
+    border: none;
+    margin-top: 35px;
+    padding: 0;
+}
+
